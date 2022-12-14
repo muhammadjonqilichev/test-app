@@ -1,0 +1,15 @@
+.text {
+  color: red;
+  font-size: 30px;
+}
+
+th, td {
+  text-align: center;
+  border: .5px solid #000;
+}
+
+select, option {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}

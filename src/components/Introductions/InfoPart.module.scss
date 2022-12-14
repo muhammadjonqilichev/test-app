@@ -1,0 +1,65 @@
+.infoPart {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .infoTitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .infoBlockFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    .inFirstBlock {
+      width: 50%;
+      text-align: center;
+    }
+    .firstBlockTitle {
+      font-size: 20px;
+    }
+
+    .firstBlockLogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85px;
+      height: 80px;
+      background-color: blue;
+      border-radius: 10px;
+    }
+  }
+
+  .infoBlockSecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    .inSecondBlock {
+      width: 50%;
+      text-align: center;
+    }
+    .secondBlockTitle {
+      font-size: 20px;
+    }
+
+    .secondBlockLogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85px;
+      height: 80px;
+      background-color: blue;
+      border-radius: 10px;
+    }
+  }
+}
