@@ -5,6 +5,8 @@
 table {
   border: .3px solid black;
   border-radius: 12px;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 th, td, td {
   text-align: center;
@@ -16,5 +18,5 @@ th, td, td {
 select, option {
   border: none;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 25px;
 }

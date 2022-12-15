@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import styles from "./TablePart.module.scss";
 
 export default function TablePart() {
-  const colNames = ["Dastur", "A", "B", "C", "D", "E", "F", "G"];
+  const colNames = ["Dastur", "Xujumga qarshi sistemalin yondashuv", "Web ilovalar uchun Tarmoqlararo ekran(web application firewall)", "Web pochta trfigini antivirus tekshiruvi", "Konfidensial ma'lumotlarni tarqalishidan himoya qilish", "SIEM (syslog) bilan integratsiya", "Ma'lumotlar yo'qolishini oldini olish tizimi", "Anonimayzerlarni bloklash (Блокировка анонимайзеров)", '"+" lar soni'];
   const rowNames = ["A", "B", "C", "D", "E", "F", "G"];
 
   
