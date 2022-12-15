@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-// import styles from "./TablePart.module.scss";
+import styles from "./TablePart.module.scss";
 
 export default function TablePart() {
   const colNames = ["Dastur", "A", "B", "C", "D", "E", "F", "G"];
@@ -58,7 +58,7 @@ export default function TablePart() {
     }
   }
   return (
-    <div>
+    <div className={styles.tableBlock}>
       <table>
         <tr>
           {colNames.map((colName) => (
