@@ -19,23 +19,30 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+
     .inFirstBlock {
-      width: 50%;
+      width: 75%;
       text-align: center;
-    }
-    .firstBlockTitle {
-      font-size: 20px;
+
+      .firstBlockTitle {
+        font-size: 20px;
+      }
+
+      .firstBlockDescription {
+        width: 100%;
+      }
+
+      .firstBlockLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 10px;
+      }
     }
 
-    .firstBlockLogo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 85px;
-      height: 80px;
-      background-color: blue;
-      border-radius: 10px;
-    }
   }
 
   .infoBlockSecond {
@@ -44,22 +51,20 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    .inSecondBlock {
-      width: 50%;
-      text-align: center;
-    }
-    .secondBlockTitle {
-      font-size: 20px;
-    }
 
-    .secondBlockLogo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 85px;
-      height: 80px;
-      background-color: blue;
-      border-radius: 10px;
+    .inSecondBlock {
+      width: 75%;
+      text-align: center;
+
+      .secondBlockTitle {
+        font-size: 20px;
+      }
+
+      .secondBlockLogo {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+      }
     }
   }
 }
