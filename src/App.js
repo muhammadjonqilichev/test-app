@@ -18,12 +18,12 @@ function App() {
     '"+" lar soni',
   ];
   const rowNames = [
-    {name: "Kerio Control", value: 0},
-    {name:"Ideco UTM", value: 0},
-    {name:"Kerio Connect", value: 0},
-    {name:"UserGate", value: 0},
-    {name:"Nmap", value: 0},
-    {name:"WinRouter", value: 0},
+    {name: "Kerio Control", value:6},
+    {name:"Ideco UTM", value: 10},
+    {name:"Kerio Connect", value: 4},
+    {name:"UserGate", value: 1},
+    {name:"Nmap", value: 8},
+    {name:"WinRouter", value: 5},
   ];
 
   return (

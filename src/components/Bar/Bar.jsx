@@ -37,16 +37,26 @@ export function BarChart({rowNames}) {
   };
   
   const labels = rowNames.map(row => row.name);
+  const values = rowNames.map(row => row.value)
   
   const data = {
     labels,
     datasets: [
       {
         label: 'Dasturiy komplekslar tahlili',
-        data: labels.map(() => faker.datatype.number({ min: 1, max: 10 })),
+        data: values,
         backgroundColor: 'rgba(108, 122, 137, 1)',
       }
     ],
+    options: {
+      scales: {
+       yAxes: [{
+         ticks: {
+          suggestedMax: values
+          }
+        }]
+       }
+     }
   };
   
   return <Bar options={options} data={data}  className={styles.barChart}/>;

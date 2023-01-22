@@ -1,89 +1,9 @@
 import React, { useState, useRef } from "react";
 import styles from "./TablePart.module.scss";
 
-export default function TablePart() {
-  const colNames = [
-    "Dastur",
-    "Xujumga qarshi sistemalin yondashuv",
-    "Web ilovalar uchun Tarmoqlararo ekran(web application firewall)",
-    "Web pochta trfigini antivirus tekshiruvi",
-    "Konfidensial ma'lumotlarni tarqalishidan himoya qilish",
-    "SIEM (syslog) bilan integratsiya",
-    "Ma'lumotlar yo'qolishini oldini olish tizimi",
-    "Anonimayzerlarni bloklash (Блокировка анонимайзеров)",
-    '"+" lar soni',
-  ];
-  const rowNames = ["A", "B", "C", "D", "E", "F", "G"];
-
-  const [inputValue, setInputValue] = useState(0);
-  var count = useRef(0);
-  const getValues = (e) => {
-    if (e.target.value === "+") {
-      console.log(Number((count.current = count.current + 1)));
-      setInputValue(count.current);
-    } else {
-      Number((count.current = count.current - 1));
-      setInputValue(count.current);
-    }
-  };
-
-  const [inputValue2, setInputValue2] = useState(0);
-  var count2 = useRef(0);
-  const getValues2 = (e) => {
-    if (e.target.value === "+") {
-      Number((count2.current = count2.current + 1));
-      setInputValue2(count2.current);
-    } else {
-      Number((count2.current = count2.current - 1));
-      setInputValue2(count2.current);
-    }
-  };
-
-  const [inputValue3, setInputValue3] = useState(0);
-  var count3 = useRef(0);
-  const getValues3 = (e) => {
-    if (e.target.value === "+") {
-      Number((count3.current = count3.current + 1));
-      setInputValue3(count3.current);
-    } else {
-      Number((count3.current = count3.current - 1));
-      setInputValue3(count3.current);
-    }
-  };
-
-  const [inputValue4, setInputValue4] = useState(0);
-  var count4 = useRef(0);
-  const getValues4 = (e) => {
-    if (e.target.value === "+") {
-      Number((count4.current = count4.current + 1));
-      setInputValue4(count4.current);
-    } else {
-      Number((count4.current = count4.current - 1));
-      setInputValue4(count4.current);
-    }
-  };
-  const [inputValue5, setInputValue5] = useState(0);
-  var count5 = useRef(0);
-  const getValues5 = (e) => {
-    if (e.target.value === "+") {
-      Number((count5.current = count5.current + 1));
-      setInputValue5(count5.current);
-    } else {
-      Number((count5.current = count5.current - 1));
-      setInputValue5(count5.current);
-    }
-  };
-  const [inputValue6, setInputValue6] = useState(0);
-  var count6 = useRef(0);
-  const getValues6 = (e) => {
-    if (e.target.value === "+") {
-      Number((count6.current = count6.current + 1));
-      setInputValue6(count6.current);
-    } else {
-      Number((count6.current = count6.current - 1));
-      setInputValue6(count6.current);
-    }
-  };
+export default function TablePart({ colNames, rowNames }) {
+  const rowName = ["A", "B", "C", "D", "E", "F", "G"];
+  
   return (
     <div className={styles.tableBlock}>
       <table>
@@ -93,78 +13,20 @@ export default function TablePart() {
           ))}
         </tr>
         <tbody>
-          <tr>
-            <td>Kerio Control</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue}</td>
-          </tr>
-          <tr>
-            <td>Ideco UTM</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues2}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue2}</td>
-          </tr>
-          <tr>
-            <td>Kerio Connect</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues3}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue3}</td>
-          </tr>
-          <tr>
-            <td>UserGate</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues4}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue4}</td>
-          </tr>
-          <tr>
-            <td>Nmap</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues5}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue5}</td>
-          </tr>
-          <tr>
-            <td>WinRouter</td>
-            {rowNames.map((colName) => (
-              <td key={colName}>
-                <select onChange={getValues6}>
-                  <option value="-">-</option>
-                  <option value="+">+</option>
-                </select>
-              </td>
-            ))}
-            <td>{inputValue6}</td>
-          </tr>
+          {rowNames.map((row) => (
+            <tr key={row.name}>
+              <td>{row.name}</td>
+              {rowName.map((colName) => (
+                <td key={colName}>
+                  <select>
+                    <option value="-">-</option>
+                    <option value="+">+</option>
+                  </select>
+                </td>
+              ))}
+              <td>{row.value}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
