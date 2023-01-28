@@ -9,11 +9,10 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import faker from 'faker';
 import styles from './Bar.module.scss';
 
 
-export function BarChart({rowNames}) {
+export function BarChart({rowNames, getBarchartList}) {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -37,7 +36,7 @@ export function BarChart({rowNames}) {
   };
   
   const labels = rowNames.map(row => row.name);
-  const values = rowNames.map(row => row.value)
+  const values = rowNames.map(row => row.count)
   
   const data = {
     labels,
