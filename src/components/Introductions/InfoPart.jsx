@@ -3,7 +3,7 @@ import styles from "./InfoPart.module.scss";
 import WinRouterLogo from "../../images/WinRouter.jpg";
 import KerioLogo from "../../images/kerioconnect.png";
 import NmapLogo from "../../images/Nmap.jpg";
-import UserGateLogo from "../../images/userGate.png"
+import UserGateLogo from "../../images/userGate.png";
 
 export const InfoPart = () => {
   return (
@@ -14,15 +14,13 @@ export const InfoPart = () => {
       </h2>
       <div className={styles.infoBlockFirst}>
         <div className={styles.inFirstBlock}>
-          <div className={styles.firstBlockWrapper}>
-            <h4 className={styles.firstBlockTitle}>Nmap</h4>
-            <img
-              className={styles.firstBlockLogo}
-              src={NmapLogo}
-              alt="Nmap"
-              width={200}
-            />
-          </div>
+          <img
+            className={styles.firstBlockLogo}
+            src={NmapLogo}
+            alt="Nmap"
+            width={400}
+          />
+          <h4 className={styles.firstBlockTitle}>Nmap</h4>
           <p className={styles.firstBlockDescription}>
             Nmap ("Tarmoq xaritasi") tarmoqni aniqlash va xavfsizlik auditi
             uchun bepul va ochiq manbali yordamchi dasturdir. Ko'pgina tizimlar
@@ -119,15 +117,13 @@ export const InfoPart = () => {
       <br className={styles.br} />
       <div className={styles.infoBlockSecond}>
         <div className={styles.inSecondBlock}>
-          <div className={styles.secondBlockWrapper}>
-            <h4 className={styles.secondBlockTitle}>Kerio Connect</h4>
-            <img
-              className={styles.secondBlockLogo}
-              src={KerioLogo}
-              alt="WinRouter"
-              width={200}
-            />
-          </div>
+          <img
+            className={styles.secondBlockLogo}
+            src={KerioLogo}
+            alt="WinRouter"
+            width={400}
+          />
+          <h4 className={styles.secondBlockTitle}>Kerio Connect</h4>
           <p className={styles.secondBlockDescription}>
             Cerio Connect. Keng tarqalgan va tasdiqlangan pochta serveri -
             Elektron pochta, kalendarlar, kontaktlar, vazifalar, chat va
@@ -164,15 +160,13 @@ export const InfoPart = () => {
       </div>
       <div className={styles.infoBlockFirst}>
         <div className={styles.inFirstBlock}>
-          <div className={styles.firstBlockWrapper}>
-            <h4 className={styles.firstBlockTitle}>WInRouter</h4>
-            <img
-              className={styles.firstBlockLogo}
-              src={WinRouterLogo}
-              alt="WinRouter"
-              width={200}
-            />
-          </div>
+          <img
+            className={styles.firstBlockLogo}
+            src={WinRouterLogo}
+            alt="WinRouter"
+            width={400}
+          />
+          <h4 className={styles.firstBlockTitle}>WInRouter</h4>
           <p className={styles.firstBlockDescription}>
             WinRouter Restarter 1.0 ni ishlab chiqaruvchining veb-saytidan
             yuklab olish mumkin. WinRouter Restarter o'rnatuvchisi odatda
@@ -197,15 +191,13 @@ export const InfoPart = () => {
       <br className={styles.br} />
       <div className={styles.infoBlockSecond}>
         <div className={styles.inSecondBlock}>
-          <div className={styles.secondBlockWrapper}>
-            <h4 className={styles.secondBlockTitle}>User Gate</h4>
-            <img
-              className={styles.secondBlockLogo}
-              src={UserGateLogo}
-              alt="UserGateLogo"
-              width={200}
-            />
-          </div>
+          <img
+            className={styles.secondBlockLogo}
+            src={UserGateLogo}
+            alt="UserGateLogo"
+            width={400}
+          />
+          <h4 className={styles.secondBlockTitle}>User Gate</h4>
           <p className={styles.secondBlockDescription}>
             Cerio Connect. Keng tarqalgan va tasdiqlangan pochta serveri -
             Elektron pochta, kalendarlar, kontaktlar, vazifalar, chat va

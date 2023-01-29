@@ -12,6 +12,7 @@
     font-size: 32px;
     font-weight: 800;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   .infoBlockFirst {
@@ -29,32 +30,28 @@
       flex-direction: column;
       align-items: flex-start;
 
-      .firstBlockWrapper {
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+      .firstBlockTitle {
+        font-size: 40px;
+        margin: 0;
+        text-align: left;
+      }
 
-        .firstBlockTitle {
-          font-size: 58px;
-          margin: 0;
-        }
-
-        .firstBlockLogo {
-          width: 155px;
-          border-radius: 10px;
-
-        }
+      .firstBlockLogo {
+        border-radius: 10px;
+        display: box;
+        margin-left: auto;
+        margin-bottom: -40px;
       }
 
       .firstBlockDescription {
-        width: 90%;
         text-align: left;
+        line-height: 1.5;
+        font-family: 'Segoe UI', monospace;
       }
     }
 
   }
+
   .br {
     height: 3px;
     background-color: #000;
@@ -73,27 +70,24 @@
       text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
 
-      .secondBlockWrapper {
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        .secondBlockTitle {
-          font-size: 58px;
-          margin: 0;
-        }
-        .secondBlockLogo {
-          width: 250px;
-          border-radius: 10px;
-        }
+      .secondBlockTitle {
+        font-size: 40px;
+        margin: 0;
+        text-align: left;
       }
+
+      .secondBlockLogo {
+        border-radius: 10px;
+        display: box;
+        margin-left: auto;
+        margin-bottom: -40px;
+      }
+
       .secondBlockDescription {
-        width: 90%;
-        text-align: right;
+        text-align: left;
+        line-height: 1.5;
+        font-family: 'Segoe UI', monospace;
       }
     }
   }
