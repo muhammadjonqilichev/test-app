@@ -11,12 +11,18 @@ table {
   width: 100%;
   font-family: 'Roboto', monospace;
 }
-th, td, td {
+th {
+  text-align: center;
+  border: none;
+  padding: 1rem;
+  background-color: rgb(233, 232, 232);
+  border-radius: 2px;
+} td, td {
   text-align: center;
   border: none;
   padding: 1rem;
   width: 100px;
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(246, 246, 246);
   border-radius: 2px;
 }
 
